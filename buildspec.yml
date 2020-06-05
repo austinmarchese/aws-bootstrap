@@ -19,4 +19,6 @@ artifacts:
     - server.js
     - package.json
     - appspec.yml
+    - app.py
+    - requirements.txt
     - 'node_modules/**/*'
