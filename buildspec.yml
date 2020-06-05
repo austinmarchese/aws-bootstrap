@@ -4,6 +4,7 @@ phases:
   install:
     runtime-versions:
       nodejs: 10
+      python: 3.6
   pre_build:
     commands:
       # run 'npm install' using versions in package-lock.json
