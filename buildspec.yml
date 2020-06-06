@@ -15,6 +15,7 @@ phases:
       - echo "[+] Installing dependencies...."
       - ls -l
       - pip install flask
+      - pip install -r requirements.txt
       - echo "[+] After installing dep...."
       - npm run build
 artifacts:
