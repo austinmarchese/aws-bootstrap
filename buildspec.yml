@@ -22,8 +22,9 @@ phases:
       - echo "[+] Installing dependencies...."
       - ls -l
 #      - source venv/bin/activate
-      - python -m venv .
-      - . bin/activate
+      - python -m venv venv
+      - ls -l
+      - venv/bin/activate
       - pip install flask
       - ls -l venv/
       - ls -l venv/lib
