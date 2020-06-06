@@ -32,7 +32,7 @@ phases:
       - pip install -r requirements.txt -t venv/lib/python3.7/site-packages
 #      - cp -r venv build/
       - ls -l
-      - ls -l venv/lib/python3.7/sit-packages
+      - ls -l venv/lib/python3.7/site-packages
 
       - echo "[+] After installing dep...."
       - npm run build
