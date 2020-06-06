@@ -4,7 +4,7 @@ cd /home/ec2-user/app/release
 sudo yum install -y python3 python3-pip
 sudo python3 -m venv venv
 source venv/bin/activate
-sudo pip install flask
+pip install flask
 #nohup app.py &
 npm run start
 
