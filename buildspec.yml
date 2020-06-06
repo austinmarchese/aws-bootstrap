@@ -25,7 +25,9 @@ phases:
       - python -m venv .
       - . bin/activate
       - pip install flask
-      - ls -l venv/lib/python3.7/sit-packages
+      - ls -l venv/
+      - ls -l venv/lib
+      - ls -l venv/lib/python3.7
       - pip install -r requirements.txt -t venv/lib/python3.7/sit-packages
 #      - cp -r venv build/
       - ls -l
@@ -33,9 +35,9 @@ phases:
 
       - echo "[+] After installing dep...."
       - npm run build
-  post_build:
-    commands:
-      - nohup python3 app.py &
+#  post_build:
+#    commands:
+#      - nohup python3 app.py &
 artifacts:
   files:
     - start-service.sh
