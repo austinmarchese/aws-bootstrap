@@ -37,7 +37,7 @@ phases:
       - npm run build
 #  post_build:
 #    commands:
-#      - nohup python3 min_app.py &
+#      - nohup python3 app.py &
 artifacts:
   files:
     - start-service.sh
@@ -45,9 +45,9 @@ artifacts:
     - server.js
     - package.json
     - appspec.yml
-    - min_app.py
-    - requirements.txt
     - app.py
+    - requirements.txt
+    - min_.py
     - 'src/**/*'
     - 'venv/**/*'
     - 'node_modules/**/*'
