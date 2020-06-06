@@ -2,6 +2,16 @@
 source /home/ec2-user/.bash_profile
 cd /home/ec2-user/app/release
 sudo yum install -y python3 python3-pip
-python3 -m venv venv
-pip install flask
+sudo python3 -m venv venv
+source venv/bin/activate
+sudo pip install flask
+#nohup app.py &
 npm run start
+
+
+#pip install -r requirements.txt --default-timeout=10000 --no-cache-dir -v
+#pip install stanza==1.0.1 --no-cache-dir -v
+#pip install nltk==3.5 --no-cache-dir -v
+#pip install waitress==1.4.3
+#nohup waitress-serve --listen 0.0.0.0:5000 wsgi:app &
+#Adding comment to test build again

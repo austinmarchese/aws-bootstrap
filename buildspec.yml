@@ -12,6 +12,9 @@ phases:
   build:
     commands:
       # run the build
+      - echo "[+] Installing dependencies...."
+      - pip install flask
+      - echo "[+] After installing dep...."
       - npm run build
 artifacts:
   files:
