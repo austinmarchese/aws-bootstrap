@@ -5,7 +5,7 @@ cd /home/ec2-user/app/release
 #nohup app.py &
 npm run start
 
-venv/bin/python3 app.py &
+nohup venv/bin/python3  app.py &
 
 #sudo yum -y update
 #sudo yum install -y python3 python3-pip
