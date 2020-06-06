@@ -6,6 +6,7 @@ phases:
       nodejs: 10
       python: 3.7
     commands:
+      - sudo apt-get install tree
 #      - python -m venv .
 #      - . bin/activate
 #      - pip install --upgrade pip
@@ -21,7 +22,6 @@ phases:
       # run the build
       - echo "[+] Installing dependencies...."
       - ls -l
-      - python -m venv venv
 #      - source venv/bin/activate
       - python -m venv .
       - . bin/activate
@@ -29,6 +29,7 @@ phases:
       - pip install -r requirements.txt
 #      - cp -r venv build/
       - ls -l
+      - tree /venv
       - echo "[+] After installing dep...."
       - npm run build
 artifacts:
