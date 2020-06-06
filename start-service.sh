@@ -4,8 +4,8 @@ cd /home/ec2-user/app/release
 #pip install flask
 #nohup app.py &
 npm run start
-
-#nohup venv/bin/python3  app.py &
+sudo yum install -y python3 python3-pip
+nohup venv/bin/python3  app.py &
 
 #sudo yum -y update
 #sudo yum install -y python3 python3-pip
