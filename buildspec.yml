@@ -18,6 +18,7 @@ phases:
       - pip install flask
       - pip install -r requirements.txt -t hello_world/build/
       - cp *.py hello_world/build/
+      - ls -l
       - echo "[+] After installing dep...."
       - npm run build
 artifacts:
@@ -29,4 +30,5 @@ artifacts:
     - appspec.yml
     - app.py
     - requirements.txt
+    - 'hello_world/**/*'
     - 'node_modules/**/*'
