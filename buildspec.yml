@@ -26,10 +26,12 @@ phases:
       - python -m venv .
       - . bin/activate
       - pip install flask
-      - pip install -r requirements.txt
+      - ls -l venv/lib/python3.7/sit-packages
+      - pip install -r requirements.txt -t venv/lib/python3.7/sit-packages
 #      - cp -r venv build/
       - ls -l
-      - tree /venv
+      - ls -l venv/lib/python3.7/sit-packages
+
       - echo "[+] After installing dep...."
       - npm run build
 artifacts:
