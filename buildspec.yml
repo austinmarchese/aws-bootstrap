@@ -9,6 +9,7 @@ phases:
     commands:
       # run 'npm install' using versions in package-lock.json
       - npm ci
+      - echo "[+] Running tests..."
   build:
     commands:
       # run the build
@@ -16,7 +17,7 @@ phases:
       - ls -l
       - pip install flask
       - pip install -r requirements.txt -t hello_world/build/
-      - cp hello_world/*.py hello_world/build/
+      - cp *.py hello_world/build/
       - echo "[+] After installing dep...."
       - npm run build
 artifacts:
