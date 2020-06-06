@@ -15,9 +15,11 @@ phases:
       # run the build
       - echo "[+] Installing dependencies...."
       - ls -l
+      - python -m venv venv
+      - source venv/bin/activate
       - pip install flask
-      - pip install -r requirements.txt -t hello_world/build/
-      - cp *.py hello_world/build/
+      - pip install -r requirements.txt
+      - cp -r venv build/
       - ls -l
       - echo "[+] After installing dep...."
       - npm run build
@@ -30,5 +32,5 @@ artifacts:
     - appspec.yml
     - app.py
     - requirements.txt
-    - 'hello_world/**/*'
+    - 'build/**/*'
     - 'node_modules/**/*'
