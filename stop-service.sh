@@ -4,4 +4,4 @@ source /home/ec2-user/.bash_profile
 cd /home/ec2-user/app/release && \
 npm stop
 
-#for pid in $(ps -ef | grep app.py | awk '{print $2}'); do kill -9 $pid; done
+kill $(pgrep python3)
