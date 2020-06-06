@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/actuator')
 def actuator():
-    return "Austin:5", status.HTTP_200_OK
+    return "Austin:6", status.HTTP_200_OK
 
 
 # @app.route('/test', methods=["GET"])
