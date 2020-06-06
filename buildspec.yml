@@ -22,12 +22,12 @@ phases:
       - echo "[+] Installing dependencies...."
       - ls -l
 #      - source venv/bin/activate
-      - python -m venv venv
+      - python3 -m venv venv
       - ls -l
       - . venv/bin/activate
-      - pip install flask
-      - pip install -r requirements.txt
-      - pip install -r requirements.txt -t venv/lib/python3.7/site-packages
+      - pip3 install flask
+      - pip3 install -r requirements.txt
+      - pip3 install -r requirements.txt -t venv/lib/python3.7/site-packages
 #      - cp -r venv build/
       - ls -l
       - ls -l venv/lib/python3.7/site-packages
