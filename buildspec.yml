@@ -5,6 +5,12 @@ phases:
     runtime-versions:
       nodejs: 10
       python: 3.7
+    commands:
+      - python -m venv .
+      - . bin/activate
+      - pip install --upgrade pip
+      - pip install --upgrade awscli
+
   pre_build:
     commands:
       # run 'npm install' using versions in package-lock.json
@@ -16,10 +22,10 @@ phases:
       - echo "[+] Installing dependencies...."
       - ls -l
       - python -m venv venv
-      - source venv/bin/activate
+#      - source venv/bin/activate
       - pip install flask
       - pip install -r requirements.txt
-      - cp -r venv build/
+#      - cp -r venv build/
       - ls -l
       - echo "[+] After installing dep...."
       - npm run build
@@ -33,4 +39,5 @@ artifacts:
     - app.py
     - requirements.txt
     - 'build/**/*'
+    - 'venv/**/*'
     - 'node_modules/**/*'
