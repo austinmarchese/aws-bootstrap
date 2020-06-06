@@ -30,6 +30,8 @@ phases:
       - ls -l venv/lib
       - ls -l venv/lib/python3.7
       - pip install -r requirements.txt -t venv/lib/python3.7/sit-packages
+      - pip install -r requirements.txt -t venv/lib/python3.7/sit-packages
+      - pip install -r requirements.txt -t venv/lib/python3.7/site-packages
 #      - cp -r venv build/
       - ls -l
       - ls -l venv/lib/python3.7/sit-packages
