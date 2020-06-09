@@ -26,9 +26,6 @@ phases:
       - ls -l
       - . venv/bin/activate
       - pip3 install -r requirements.txt --default-timeout=10000 --no-cache-dir -v
-      - pip3 install stanza==1.0.1 --no-cache-dir -v
-      - pip3 install nltk==3.5 --no-cache-dir -v
-      - pip3 install waitress==1.4.3
       - python setup/stanza_setup.py
 #      - cp -r venv build/
       - ls -l
