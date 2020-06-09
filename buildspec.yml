@@ -29,6 +29,7 @@ phases:
       - pip3 install stanza==1.0.1 --no-cache-dir -v
       - pip3 install nltk==3.5 --no-cache-dir -v
       - pip3 install waitress==1.4.3
+      - python setup/stanza_setup.py
 #      - cp -r venv build/
       - ls -l
       - ls -l venv/lib/python3.7/site-packages
