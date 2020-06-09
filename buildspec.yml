@@ -27,6 +27,8 @@ phases:
       - . venv/bin/activate
       - pip3 install -r requirements.txt --default-timeout=10000 --no-cache-dir -v
       - python setup/stanza_setup.py
+      - cp /root/stanza_resources /home/ec2-user/stanza_resources
+      - chmod -R 777 /home/ec2-user/stanza_resources
 #      - cp -r venv build/
       - ls -l
       - ls -l venv/lib/python3.7/site-packages
