@@ -2,6 +2,10 @@
 source /home/ec2-user/.bash_profile
 cd /home/ec2-user/app/release
 #npm run start
+sudo service codedeploy-agent restart
+#sudo /etc/init.d/codedeploy-agent stop
+#sudo /etc/init.d/codedeploy-agent start
+#echo 3 > sudo /proc/sys/vm/drop_caches
 sudo yum install -y python3 python3-pip
 venv/bin/python3 setup/stanza_setup.py
 #sudo mv stanza_resources/ ../../
