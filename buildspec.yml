@@ -3,7 +3,6 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 10
       python: 3.7
     commands:
 #      - python -m venv .
@@ -14,7 +13,6 @@ phases:
   pre_build:
     commands:
       # run 'npm install' using versions in package-lock.json
-      - npm ci
       - echo "[+] Running tests..."
   build:
     commands:
@@ -46,8 +44,6 @@ artifacts:
   files:
     - start-service.sh
     - stop-service.sh
-    - server.js
-    - package.json
     - appspec.yml
     - 'logs/**/*'
     - app.py
