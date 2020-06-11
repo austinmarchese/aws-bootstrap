@@ -53,6 +53,7 @@ artifacts:
     - app.py
     - requirements.txt
     - min_.py
+    - 'setup/**'
     - 'src/**/*'
 #    - '../../stanza_resources'
 #    - 'stanza_resources/**/*'
