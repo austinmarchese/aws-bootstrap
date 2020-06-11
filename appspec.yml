@@ -21,3 +21,6 @@ hooks:
     - location: stop-service.sh
       timeout: 300
       runas: ec2-user
+    - location: remove_archives.sh
+      timeout: 300
+      runas: root
