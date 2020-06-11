@@ -10,6 +10,9 @@ app = Flask(__name__)
 def actuator():
     return "Milestone:4", status.HTTP_200_OK
 
+@app.route('/')
+def healthcheck():
+    return "healthcheck", status.HTTP_200_OK
 
 # @app.route('/test', methods=["GET"])
 # def test():

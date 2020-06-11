@@ -307,7 +307,7 @@ Resources:
     Type: AWS::ElasticLoadBalancingV2::TargetGroup
     Properties:
       TargetType: instance
-      Port: 8080
+      Port: 5000
       Protocol: HTTP
       VpcId: !Ref VPC
       HealthCheckEnabled: true
