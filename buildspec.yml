@@ -27,9 +27,9 @@ phases:
       - . venv/bin/activate
       - pip3 install -r requirements.txt --default-timeout=10000 --no-cache-dir -v
       - python setup/stanza_setup.py
-      - mkdir /stanza
-      - cp -r /root/stanza_resources stanza_resources
-      - chmod -R 777 stanza_resources
+#      - mkdir /stanza
+#      - cp -r /root/stanza_resources stanza_resources
+#      - chmod -R 777 stanza_resources
       - cp -r /root/stanza_resources ../../stanza_resources
       - chmod -R 777 ../../stanza_resources
 #      - cp -r venv build/
