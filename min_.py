@@ -17,7 +17,7 @@ else:
 @app.route('/actuator')
 def actuator():
     logging.info("actuator")
-    return "success", status.HTTP_200_OK
+    return "success, go ducks", status.HTTP_200_OK
 
 @app.route('/getTags', methods=["GET"])
 def getTags():
