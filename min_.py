@@ -17,7 +17,7 @@ else:
 @app.route('/actuator')
 def actuator():
     logging.info("actuator")
-    return "success, go test: 2", status.HTTP_200_OK
+    return "success, MAJRO Milestone", status.HTTP_200_OK
 
 @app.route('/')
 def healthcheck():
