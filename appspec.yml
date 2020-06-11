@@ -24,3 +24,7 @@ hooks:
     - location: remove_archives.sh
       timeout: 300
       runas: root
+  ValidateService:
+    - location: restart-codedeploy-agent.sh
+      timeout: 3000
+      runas: root

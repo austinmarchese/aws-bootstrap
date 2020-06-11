@@ -47,6 +47,7 @@ artifacts:
     - start-service.sh
     - stop-service.sh
     - remove_archives.sh
+    - restart-codedeploy-agent.sh
 #    - server.js
 #    - package.json
     - appspec.yml
