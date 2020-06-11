@@ -17,7 +17,7 @@ else:
 @app.route('/actuator')
 def actuator():
     logging.info("actuator")
-    return "FML Go DUcks", status.HTTP_200_OK
+    return "Rehitting", status.HTTP_200_OK
 
 @app.route('/')
 def healthcheck():
