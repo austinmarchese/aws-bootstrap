@@ -1,5 +1,7 @@
 #!/bin/bash -xe
 source /home/ec2-user/.bash_profile
-cd /home/ec2-user/app/release
+[ -d "/home/ec2-user/app/release" ] && \
+cd /home/ec2-user/app/release && \
+npm stop
 
 kill $(pgrep python3)
