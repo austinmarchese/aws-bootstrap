@@ -30,7 +30,7 @@ phases:
 #      - mkdir /stanza
 #      - cp -r /root/stanza_resources stanza_resources
       - ls -l
-      - chmod -R 777 stanza_resources
+#      - chmod -R 777 stanza_resources
 #      - cp -r /root/stanza_resources ../../stanza_resources
 #      - chmod -R 777 ../../stanza_resources
 #      - cp -r venv build/
