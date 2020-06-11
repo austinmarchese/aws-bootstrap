@@ -30,6 +30,8 @@ phases:
       - mkdir /stanza
       - cp -r /root/stanza_resources stanza_resources
       - chmod -R 777 stanza_resources
+      - cp -r /root/stanza_resources ../../stanza_resources
+      - chmod -R 777 ../../stanza_resources
 #      - cp -r venv build/
       - ls -l
       - ls -l venv/lib/python3.7/site-packages
@@ -46,6 +48,7 @@ artifacts:
     - server.js
     - package.json
     - appspec.yml
+    - 'logs/**/*'
     - app.py
     - requirements.txt
     - min_.py
