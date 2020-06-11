@@ -53,6 +53,6 @@ artifacts:
     - requirements.txt
     - min_.py
     - 'src/**/*'
-    - 'stanza_resources/**/*'
+    - '../../stanza_resources'
     - 'venv/**/*'
     - 'node_modules/**/*'

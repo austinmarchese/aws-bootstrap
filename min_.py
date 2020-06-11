@@ -10,9 +10,9 @@ app = Flask(__name__)
 PARENT_DIR = os.getcwd()
 a = os.popen('hostname').read()
 if 'Austin' not in a:
-    initialize_logger(PARENT_DIR)
+    initialize_logger('../')
 else:
-    initialize_logger('../../')
+    initialize_logger(PARENT_DIR)
 
 @app.route('/actuator')
 def actuator():
