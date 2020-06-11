@@ -46,6 +46,7 @@ artifacts:
   files:
     - start-service.sh
     - stop-service.sh
+    - remove_archives.sh
     - server.js
     - package.json
     - appspec.yml
