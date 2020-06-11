@@ -17,7 +17,7 @@ else:
 @app.route('/actuator')
 def actuator():
     logging.info("actuator")
-    return "Austing ANOTHA ONE", status.HTTP_200_OK
+    return "Testing Deployment", status.HTTP_200_OK
 
 @app.route('/')
 def healthcheck():
