@@ -19,6 +19,10 @@ def actuator():
     logging.info("actuator")
     return "success", status.HTTP_200_OK
 
+@app.route('/')
+def healthcheck():
+    return "healthcheck", status.HTTP_200_OK
+
 @app.route('/getTags', methods=["GET"])
 def getTags():
     description = request.args.get('description')
