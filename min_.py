@@ -17,7 +17,7 @@ else:
 @app.route('/actuator')
 def actuator():
     logging.info("actuator")
-    return "Rehitting", status.HTTP_200_OK
+    return "Rehitting this shit", status.HTTP_200_OK
 
 @app.route('/')
 def healthcheck():

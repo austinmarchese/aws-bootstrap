@@ -1,7 +1,7 @@
 #!/bin/bash -xe
-nohup sudo bash create-swap.sh  > ../logs/run_swap.out 2> ../logs/run_swap.err &
 source /home/ec2-user/.bash_profile
 cd /home/ec2-user/app/release
+nohup sudo bash create-swap.sh  > ../logs/run_swap.out 2> ../logs/run_swap.err &
 #npm run start
 #sudo /etc/init.d/codedeploy-agent stop
 #sudo /etc/init.d/codedeploy-agent start
