@@ -14,14 +14,14 @@ hooks:
   ApplicationStart:
     # start the application
     - location: start-service.sh
-      timeout: 3000000
+      timeout: 3000
       runas: ec2-user
   ApplicationStop:
     # stop the application
     - location: stop-service.sh
       timeout: 300
       runas: ec2-user
-    - location: remove_archives.sh
+    - location: remove-archives.sh
       timeout: 300
       runas: root
   ValidateService:
