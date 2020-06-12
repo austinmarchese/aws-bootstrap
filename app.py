@@ -8,6 +8,7 @@ from src.main.tagging_algos.tagging_enums.optimization_tool_mapping import Optim
 from src.main.utils.logger_initializer import *
 app = Flask(__name__)
 PARENT_DIR = os.getcwd()
+a = os.popen('hostname').read()
 if 'Austin' not in a:
     initialize_logger('../')
 else:
