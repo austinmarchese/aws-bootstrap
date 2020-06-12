@@ -18,7 +18,6 @@ phases:
       - pip3 install -r requirements.txt --default-timeout=10000 --no-cache-dir -v
       - ls -l
       - echo "[+] After installing dep...."
-      - npm run build
 artifacts:
   files:
     - start-service.sh
